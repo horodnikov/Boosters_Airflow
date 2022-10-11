@@ -5,7 +5,7 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 
 with DAG(
     dag_id='apilayer_create_table',
-    start_date=datetime(2020, 8, 1),
+    start_date=datetime(2022, 9, 1),
     schedule="@once",
 ) as dag:
     task_create_table = PostgresOperator(
